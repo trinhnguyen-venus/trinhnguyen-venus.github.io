@@ -1,152 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trinh Nguyen | Portfolio</title>
+
+  <!-- Typing effect -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
   <style>
-    /* Reset + fonts */
     body {
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: "Poppins", sans-serif;
       margin: 0;
       padding: 0;
-      background: #f8fafc;
-      color: #1e293b;
+      background-color: #f7f9fc;
+      color: #333;
+      text-align: center;
     }
 
     header {
-      text-align: center;
       padding: 60px 20px 40px;
-      background: linear-gradient(135deg, #2e8bc0, #145da0);
+      background: linear-gradient(135deg, #56ccf2, #2f80ed);
       color: white;
     }
 
-    header h1 {
-      font-size: 2.5rem;
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
+    .typing {
+      font-size: 18px;
+      color: #fff9c4;
+      font-weight: 500;
     }
 
-    .container {
+    section {
+      padding: 50px 20px;
       max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
+      margin: auto;
     }
 
-    h2 {
-      text-align: center;
-      color: #145da0;
-      margin-bottom: 30px;
-      font-size: 1.8rem;
-    }
-
-    /* Project cards */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      margin-top: 30px;
     }
 
     .card {
       background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 25px;
-      transition: all 0.3s ease;
-      border-top: 4px solid #2e8bc0;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
     .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
     .card h3 {
-      color: #145da0;
+      color: #2f80ed;
       margin-bottom: 10px;
     }
 
     .card p {
-      color: #475569;
-      line-height: 1.6;
-      font-size: 0.95rem;
-      margin-bottom: 15px;
+      color: #555;
     }
 
-    .card a {
+    a {
       text-decoration: none;
-      color: #2e8bc0;
-      font-weight: 600;
-      transition: color 0.2s;
+      color: #2f80ed;
+      font-weight: 500;
     }
 
-    .card a:hover {
-      color: #0f3460;
-    }
-
-    /* Contact section */
     footer {
-      text-align: center;
-      padding: 30px;
-      background: #145da0;
+      background: #2f80ed;
       color: white;
-      margin-top: 50px;
+      padding: 30px 10px;
+      margin-top: 60px;
     }
 
     footer a {
-      color: #fcd34d;
+      color: #fff9c4;
       text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    /* Animation */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    .card {
-      animation: fadeIn 0.6s ease forwards;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>👋 Hi, I’m Trinh Nguyen</h1>
-    <p>Data Analyst | SQL • Python • Visualization</p>
+    <img src="https://avatars.githubusercontent.com/trinhnguyen-venus" alt="Avatar" class="avatar" />
+    <h1>Hi, I'm Trinh Nguyen 👋</h1>
+    <div class="typing"></div>
   </header>
 
-  <section class="container">
-    <h2>🚀 Featured Projects</h2>
+  <section>
+    <h2>📂 Featured Projects</h2>
     <div class="projects">
-      
+
       <div class="card">
         <h3>Retail Sales Analysis (SQL)</h3>
-        <p>Exploratory SQL analysis on retail sales dataset – focusing on revenue patterns and customer behavior insights.</p>
+        <p>Exploratory SQL analysis on retail sales dataset, focusing on customer behavior and sales trends.</p>
         <a href="https://github.com/trinhnguyen-venus/retail-sales-analysis" target="_blank">🔗 View Project</a>
       </div>
 
       <div class="card">
         <h3>Library Management (SQL)</h3>
-        <p>Database design and CRUD operations for a library system, including advanced SQL queries and reporting insights.</p>
+        <p>Database design and queries for a library management system — CRUD, reporting, and advanced insights.</p>
         <a href="https://github.com/trinhnguyen-venus/library-management" target="_blank">🔗 View Project</a>
       </div>
 
+      <div class="card">
+        <h3>Supply Chain Freight Analysis</h3>
+        <p>Python-based analysis of logistics performance and freight cost efficiency using Jupyter Notebook.</p>
+        <a href="https://github.com/trinhnguyen-venus/supply-chain-freight-analysis" target="_blank">🔗 View Project</a>
+      </div>
     </div>
   </section>
 
   <footer>
-    <p>📧 Contact: <a href="mailto:trinhnguyen.venus@gmail.com">trinhnguyen.venus@gmail.com</a></p>
-    <p>© 2025 Trinh Nguyen | Built with ❤️ on GitHub Pages</p>
+    <p>📫 Contact me on <a href="https://www.linkedin.com/in/venus-trinhnguyen/" target="_blank">LinkedIn</a> |
+       <a href="mailto:ng.trinh3023@gmail.com">Email</a></p>
   </footer>
 
+  <script>
+    var typed = new Typed(".typing", {
+      strings: ["I'm a Data Analyst", "SQL Developer", "Storyteller"],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+    });
+  </script>
 </body>
 </html>
