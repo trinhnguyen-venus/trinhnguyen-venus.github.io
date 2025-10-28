@@ -2,34 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trinh Nguyen | Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    h2 { color: #16a085; }
-    a { color: #2980b9; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .project { margin-bottom: 30px; }
-  </style>
-</head>
-<body>
-  <h1>👋 Hi, I'm Trinh Nguyen</h1>
-  <p>Data Analyst | SQL • Python • Visualization</p>
+    /* Reset + fonts */
+    body {
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8fafc;
+      color: #1e293b;
+    }
 
-  <h2>📂 Projects</h2>
-  <div class="project">
-    <h3>Retail Sales Analysis (SQL)</h3>
-    <p>Exploratory SQL analysis on retail sales dataset.</p>
-    <a href="https://github.com/trinhnguyen-venus/retail-sales-analysis" target="_blank">🔗 View Project</a>
-  </div>
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+      background: linear-gradient(135deg, #2e8bc0, #145da0);
+      color: white;
+    }
 
-  <div class="project">
-    <h3>Library Management (SQL)</h3>
-    <p>Database design & queries for a library system (CRUD, reporting, insights).</p>
-    <a href="https://github.com/trinhnguyen-venus/library-management" target="_blank">🔗 View Project</a>
-  </div>
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-  <h2>📫 Contact</h2>
-  <p>LinkedIn | Email | GitHub</p>
-</body>
-</html>
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #145da0;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+
+    /* Project cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 25px;
+      transition: all 0.3s ease;
+      border-top: 4px solid #2e8bc0;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+    }
+
+    .card h3 {
+      color: #145da0;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #475569;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #2e8bc0;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    .card a:hover {
+      color: #0f3460;
+    }
+
+    /* Contact section */
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #145da0;
+      color: white;
+      margin-top: 50px;
+    }
+
+    footer a {
+      color: #fcd34d;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .card {
+      an
+
