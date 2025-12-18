@@ -40,10 +40,18 @@
       color: #ffffff;
     }
 
-    .typing {
+    .static-text {
       font-size: 18px;
       color: #dbe4f0;
       font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .typing {
+      font-size: 16px;
+      color: #cfd8ea;
+      font-weight: 500;
+      min-height: 22px;
     }
 
     section {
@@ -65,6 +73,7 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
       padding: 25px;
       transition: transform 0.2s, box-shadow 0.2s;
+      text-align: left;
     }
 
     .card:hover {
@@ -75,10 +84,13 @@
     .card h3 {
       color: #305496;
       margin-bottom: 10px;
+      font-size: 18px;
     }
 
     .card p {
       color: #555;
+      font-size: 14px;
+      line-height: 1.5;
     }
 
     a {
@@ -100,52 +112,98 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <img src="https://avatars.githubusercontent.com/trinhnguyen-venus" alt="Avatar" class="avatar" />
     <h1>Hi, I'm Trinh Nguyen 👋</h1>
+
+    <!-- Static (non-animated) text -->
+    <div class="static-text">
+      I'm a Data Analyst · Turning data into business insights · Supporting better decisions
+    </div>
+
+    <!-- Typing animation text -->
     <div class="typing"></div>
   </header>
 
   <section>
-    <h2>📂 Featured Projects</h2>
+    <h2>📂 Selected Business Analytics Projects</h2>
+
     <div class="projects">
 
       <div class="card">
-        <h3>Retail Sales Analysis (SQL)</h3>
-        <p>Exploratory SQL analysis on retail sales dataset, focusing on customer behavior and sales trends.</p>
+        <h3>Retail Sales Performance & Customer Segmentation</h3>
+        <p>
+          Analyzed retail transaction data to understand revenue patterns, product performance,
+          and customer value using a business-focused approach.
+        </p>
         <a href="https://github.com/trinhnguyen-venus/retail-sales-analysis" target="_blank">🔗 View Project</a>
       </div>
 
       <div class="card">
-        <h3>Library Management (SQL)</h3>
-        <p>SQL queries for a library management system — CRUD, reporting, and advanced insights.</p>
-        <a href="https://github.com/trinhnguyen-venus/library-management" target="_blank">🔗 View Project</a>
+        <h3>Financial Performance Analysis of Global Companies</h3>
+        <p>
+          Financial analysis examining profitability, capital structure,
+          and efficiency across industries to support strategic decisions.
+        </p>
+        <a href="https://github.com/trinhnguyen-venus/financial-performance-analysis" target="_blank">🔗 View Project</a>
       </div>
 
       <div class="card">
-        <h3>Supply Chain Freight Analysis</h3>
-        <p>Python-based analysis of logistics performance and freight cost efficiency using Jupyter Notebook.</p>
+        <h3>Supply Chain Performance & Freight Cost Analysis</h3>
+        <p>
+          Explored shipment modes, lead times, delivery reliability,
+          and freight cost efficiency to identify operational trade-offs.
+        </p>
         <a href="https://github.com/trinhnguyen-venus/supply-chain-freight-analysis" target="_blank">🔗 View Project</a>
       </div>
-      
+
       <div class="card">
-        <h3>HR Performance Dashboard (Excel)</h3>
-        <p>Advanced Excel dashboard analyzing employee performance, turnover, and compensation insights using Power Query, Power Pivot (DAX), and interactive visuals.</p>
+        <h3>HR Attrition & Performance Analysis Dashboard</h3>
+        <p>
+          HR analytics dashboard analyzing employee turnover, satisfaction,
+          performance, and career progression for management decision support.
+        </p>
         <a href="https://github.com/trinhnguyen-venus/HR-Analytics-Dashboard" target="_blank">🔗 View Project</a>
       </div>
-      
+
+      <div class="card">
+        <h3>Financial & Sales Performance Dashboard (Power BI)</h3>
+        <p>
+          Interactive Power BI dashboard analyzing sales trends,
+          customer contribution, and product performance.
+        </p>
+        <a href="https://github.com/trinhnguyen-venus/Financial-Sales-Performance-Dashboard" target="_blank">🔗 View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Sales Performance Dashboard (Excel)</h3>
+        <p>
+          Excel-based management dashboard tracking revenue, profit,
+          targets, and store-level performance for daily monitoring.
+        </p>
+        <a href="https://github.com/trinhnguyen-venus/Sales-Dashboard-Excel" target="_blank">🔗 View Project</a>
+      </div>
+
     </div>
   </section>
 
   <footer>
-    <p>📫 Contact me on <a href="https://www.linkedin.com/in/venus-trinhnguyen/" target="_blank">LinkedIn</a> |
-       <a href="mailto:ng.trinh3023@gmail.com">Email</a></p>
+    <p>
+      📫 Contact me on
+      <a href="https://www.linkedin.com/in/venus-trinhnguyen/" target="_blank">LinkedIn</a> |
+      <a href="mailto:ng.trinh3023@gmail.com">Email</a>
+    </p>
   </footer>
 
   <script>
     var typed = new Typed(".typing", {
-      strings: ["I'm a Data Analyst", "Using SQL, Excel, Python, Power BI", "Storyteller"],
+      strings: [
+        "I'm a Data Analyst",
+        "Using SQL, Excel, Python, Power BI",
+        "Storyteller"
+      ],
       typeSpeed: 60,
       backSpeed: 40,
       loop: true,
